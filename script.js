@@ -11,3 +11,12 @@ document.querySelectorAll("nav a").forEach((anchor) => {
     }
   });
 });
+
+// for pop up when submitting contact form
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+
+  alert("Thanks " + name + "! Your contact form has been submitted.");
+});

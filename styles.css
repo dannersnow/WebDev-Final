@@ -39,6 +39,98 @@ section {
 #projects {
   background: #bbb;
 }
+
+/* contact form */
+/*
+*/
 #contact {
+  height: auto;
   background: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactForm {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset label {
+  display: inline;
+  margin-left: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  /* able to resize */
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: #333;
+  outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background: #333;
+  color: white;
+}
+
+input[type="reset"] {
+  background: #ccc;
+}
+
+input[type="submit"]:hover {
+  background: #555;
+}
+
+input[type="reset"]:hover {
+  background: #aaa;
 }

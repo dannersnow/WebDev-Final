@@ -31,9 +31,66 @@
       <p>Projects go here</p>
     </section>
 
+    <!-- Contact Form Section -->
+    <!---->
+    <!---->
     <section id="contact">
-      <h1>Contatct</h1>
-      <p>Contact info goes here</p>
+      <h1>Contact Me</h1>
+      <p>Fill out the form and I will get back to you as soon as possible.</p>
+      <form id="contactForm" action="/submit">
+        <!-- name -->
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+        <!-- email -->
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <br />
+        <!-- contact reason field -->
+        <fieldset>
+          <legend>Reason for Contact</legend>
+          <input type="radio" name="reason" id="professional" />
+          <label for="professional">Professional</label>
+          <br />
+          <input type="radio" name="reason" id="business" />
+          <label for="business">Business</label>
+          <br />
+          <input type="radio" name="reason" id="personal" />
+          <label for="personal">Personal</label>
+        </fieldset>
+        <br />
+        <!-- message textbox -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+        <!-- submit and reset -->
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
     </section>
 
     <script src="script.js"></script>
