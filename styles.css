@@ -9,6 +9,7 @@ nav {
   background: #333;
   padding: 10px;
   margin-bottom: 40px auto;
+  z-index: 1000; /* ensures navbar always on top */
 }
 
 nav ul {
@@ -43,8 +44,71 @@ p {
 #about {
   background: #ddd;
 }
+
+/* experience section */
+/*
+*/
 #experience {
   background: #f4f4f4;
+}
+
+.class-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.class-card {
+  background: rgb(202, 198, 198);
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.class-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.class-card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.class-card h3 {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.class-card h3:hover {
+  color: #555;
+}
+
+#experience h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#experience p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 0;
 }
 
 /* project section */

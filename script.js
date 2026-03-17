@@ -12,6 +12,14 @@ document.querySelectorAll("nav a").forEach((anchor) => {
   });
 });
 
+// toggles skill list in experience section by clicking course title
+document.querySelectorAll(".class-card h3").forEach((title) => {
+  title.addEventListener("click", () => {
+    const ul = title.nextElementSibling;
+    ul.classList.toggle("hidden");
+  });
+});
+
 // toggles details on and off in project cards
 function toggleDetails(button) {
   const details = button.nextElementSibling;
