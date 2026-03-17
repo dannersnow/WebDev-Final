@@ -12,6 +12,12 @@ document.querySelectorAll("nav a").forEach((anchor) => {
   });
 });
 
+// toggles details on and off in project cards
+function toggleDetails(button) {
+  const details = button.nextElementSibling;
+  details.classList.toggle("hidden");
+}
+
 // for pop up when submitting contact form
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();

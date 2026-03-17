@@ -26,9 +26,62 @@
       <p>Experience goes here</p>
     </section>
 
+    <!-- Project Section -->
+    <!---->
+    <!---->
     <section id="projects">
       <h1>Projects</h1>
-      <p>Projects go here</p>
+      <p>
+        Projects completed in earlier Computer Science classes. These three
+        projects were written using C++, with a focus on data structures.
+      </p>
+      <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project">
+          <h3>Pizza Builder App</h3>
+          <p>
+            Build a pizza by adding topping and picking cheese or crust types.
+          </p>
+          <a href="https://github.com/dannersnow/pizza-project" target="_blank"
+            >View on GitHub</a
+          >
+          <button onclick="toggleDetails(this)">Details</button>
+          <p class="details hidden">
+            This project worked with a stack - which made sense thematically for
+            pizza toppings! It has push, pop, and peek functionality. The pizzas
+            (stacks) were then organized into an LLL.
+          </p>
+        </div>
+        <!-- Project 2 -->
+        <div class="project">
+          <h3>CS Term Entry Manager</h3>
+          <p>Enter new CS terms, or search for existing ones.</p>
+          <a href="https://github.com/dannersnow/hash-project" target="_blank"
+            >View on GitHub</a
+          >
+          <button onclick="toggleDetails(this)">Details</button>
+          <p class="details hidden">
+            This project worked with a hash table. All the usual functions for
+            adding, removing, and traversing are present. Additionally, a txt
+            file was included to dump a large amount of data into the table for
+            testing.
+          </p>
+        </div>
+        <!-- Project 3 -->
+        <div class="project">
+          <h3>Zoo Animal Terminal</h3>
+          <p>Keep track of animals kept in the zoo. Add, view, or relocate.</p>
+          <a href="https://github.com/dannersnow/zoo-project" target="_blank"
+            >View on GitHub</a
+          >
+          <button onclick="toggleDetails(this)">Details</button>
+          <p class="details hidden">
+            This project was implemented with an abstract data type - CS_Zoo.
+            This ADT was then organized into a linear linked list that could be
+            traversed, added to, removed from, and viewed.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Form Section -->
